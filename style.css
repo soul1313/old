@@ -1,0 +1,158 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Анимация текста */
+.scrolling-text {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
+    font-size: 24px;
+    color: #f1c40f;
+    padding: 10px 0;
+}
+
+@keyframes scroll {
+    0% { left: 100%; }
+    100% { left: -100%; }
+}
+
+/* Заголовки */
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #f1c40f;
+}
+
+/* Навигация */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Секции */
+section {
+    padding: 20px;
+}
+
+#about {
+    background-color: #333;
+}
+
+#characters {
+    background-color: #444;
+}
+
+#seasons-info {
+    background-color: #444;
+}
+
+#about h2, #seasons-info h2, #characters h2 {
+    color: #f1c40f;
+}
+
+h3 {
+    color: #f1c40f;
+}
+
+/* Карточки персонажей */
+.character-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.character-img {
+    width: 120px;
+    height: 180px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.character-info h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #f1c40f;
+}
+
+.character-info p {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Тире между изображением и описанием */
+.character-info::before {
+    content: "–";
+    font-size: 24px;
+    color: #f1c40f;
+    margin-right: 15px;
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #900;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #f1c40f;
+}
+
+th {
+    background-color: #b00;
+    color: #fff;
+}
+
+td {
+    background-color: #900;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #b00;
+}
+
+tr:hover {
+    background-color: #c00;
+}
+
+/* Картинка, растянутая на всю ширину */
+#about img {
+    width: 100%; /* Растягивает картинку на всю ширину */
+    height: auto; /* Сохраняет пропорции */
+}
